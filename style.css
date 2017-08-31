@@ -18,10 +18,11 @@ a{
 	font-size: 0.9em;
 }
 
+
 .clear {clear: both;}
 
 p {
-	font-size: 1em;
+	font-size: 0.9em;
 	line-height: 1.4em;
 	margin-bottom: 20px;
 	color: #444;
@@ -134,30 +135,43 @@ section:last-child {
 .sectionTitle h1 {
 	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
 	font-style: italic;
-	font-size: 1.5em;
+	font-size: 1.3em;
+	text-align: right;
+	margin-right:0.5em;
 	color: #149DC5;
 }
 
 .sectionContent h2 {
 	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
-	font-size: 1.3em;
+	font-size: 1.2em;
 	margin-bottom: -2px;
 	color: #149DC5;
 }
 
+.sectionContent h3 {
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	font-size: 1.0em;
+	margin-bottom: -2px;
+}
+
 .subDetails {
-	font-size: 0.8em;
+	font-size: 0.9em;
 	font-style: italic;
 	margin-bottom: 3px;
 }
 
+.subDetailsDescription {
+	font-size: 0.9em;
+	margin-bottom: 1.2em;
+}
+
 .keySkills {
 	list-style-type: none;
-	-moz-column-count:3;
-	-webkit-column-count:3;
-	column-count:3;
+	-moz-column-count:4;
+	-webkit-column-count:4;
+	column-count:4;
 	margin-bottom: 20px;
-	font-size: 1em;
+	font-size: 0.9em;
 	color: #444;
 }
 
@@ -165,7 +179,7 @@ section:last-child {
 	margin-bottom: 3px;
 }
 
-@media all and (min-width: 602px) and (max-width: 800px) {
+@media screen and (min-width: 602px) and (max-width: 800px) {
 	#headshot {
 		display: none;
 	}
@@ -177,7 +191,7 @@ section:last-child {
 	}
 }
 
-@media all and (max-width: 601px) {
+@media screen and (max-width: 601px) {
 	#cv {
 		width: 95%;
 		margin: 10px auto;
@@ -211,7 +225,7 @@ section:last-child {
 	}
 }
 
-@media all and (max-width: 480px) {
+@media screen and (max-width: 480px) {
 	.mainDetails {
 		padding: 15px 15px;
 	}
@@ -238,9 +252,32 @@ section:last-child {
 }
 
 @media print {
+
+	.sectionTitle h1 {
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	font-style: italic;
+	font-size: 1.2em;
+	text-align: left;
+	margin-right:0em;
+	color: #149DC5;
+}
+
+
     #cv {
         width: 100%;
     }
+
+    #headshot {
+		display: none;
+	}
+
+	article{
+		page-break-inside: avoid
+	}
+}
+
+.nextPage{
+	page-break-before: always
 }
 
 @-webkit-keyframes reset {
