@@ -24,8 +24,8 @@ a{
 p {
 	font-size: 0.9em;
 	line-height: 1.4em;
-	margin-bottom: 20px;
-	color: #444;
+	margin-bottom: 10px;
+	color: #333;
 }
 
 #cv {
@@ -36,19 +36,20 @@ p {
 }
 
 .mainDetails {
-	padding: 25px 35px;
+	padding: 15px 35px;
 	border-bottom: 2px solid #149DC5;
 	background: #ededed;
 }
 
 #name h1 {
-	font-size: 2.5em;
+	font-size: 2em;
 	font-weight: 700;
 	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
 	margin-bottom: 6px;
 }
 
-#name h2 {
+#name 
+ {
 	font-size: 1.5em;
 	margin-left: 2px;
 	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
@@ -84,10 +85,11 @@ p {
 	list-style-type: none;
 	font-size: 0.9em;
 	margin-top: 2px;
+	text-align: right;
 }
 
 #contactDetails ul li {
-	margin-bottom: 0.6em;
+	margin-bottom: 0.3em;
 	color: #444;
 }
 
@@ -124,39 +126,42 @@ section:last-child {
 
 .sectionTitle {
 	float: left;
-	width: 27.5%;
+	width: 20%;
 }
 
 .sectionContent {
 	float: right;
-	width: 70.5%;
+	width: 78%;
 }
 
 .sectionTitle h1 {
 	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
-	font-style: italic;
 	font-size: 1.3em;
 	text-align: right;
 	margin-right:0.5em;
 	color: #149DC5;
+	font-weight: bold;
 }
 
 .sectionContent h2 {
 	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
-	font-size: 1.2em;
-	margin-bottom: -2px;
-	color: #149DC5;
+	font-size: 1.1em;
+	margin-bottom: 3px;
+	color: #149DC5;	
 }
 
 .sectionContent h3 {
 	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
-	font-size: 1.0em;
+	font-size: 0.9em;
 	margin-bottom: -2px;
+	color: #111;
+	font-weight: 600;
+
 }
 
 .subDetails {
 	font-size: 0.9em;
-	font-style: italic;
+	font-weight: bold;
 	margin-bottom: 3px;
 }
 
@@ -170,13 +175,13 @@ section:last-child {
 	-moz-column-count:4;
 	-webkit-column-count:4;
 	column-count:4;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	font-size: 0.9em;
 	color: #444;
 }
 
 .keySkills ul li {
-	margin-bottom: 3px;
+	margin-bottom: -2px;
 }
 
 @media screen and (min-width: 602px) and (max-width: 800px) {
@@ -227,7 +232,7 @@ section:last-child {
 
 @media screen and (max-width: 480px) {
 	.mainDetails {
-		padding: 15px 15px;
+		padding: 10px 15px;
 	}
 	
 	section {
@@ -257,7 +262,7 @@ section:last-child {
 	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
 	font-style: italic;
 	font-size: 1.2em;
-	text-align: left;
+	text-align: right;
 	margin-right:0em;
 	color: #149DC5;
 }
